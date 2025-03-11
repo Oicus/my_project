@@ -1,30 +1,45 @@
 # Keylogger Project
 
-## Explanation of Improvements:
-1. **Error Handling**: 
-   - Added more detailed error messages to help diagnose issues.
+## Overview
 
-2. **Configuration**: 
-   - Used environment variables to configure the IP address, port number, and time interval. This makes the code more flexible and easier to configure without changing the source code.
+This project is a keylogger designed to capture and send keystrokes to a specified server. The keylogger uses the `pynput` library to capture keystrokes and `requests` library to send the data.
 
-3. **Logging**: 
-   - Added logging to track the program's activity and errors. This is useful for debugging and monitoring the program's behavior.
+## Features
 
-4. **Documentation**: 
-   - Added comments to explain the purpose of each part of the code.
+- Captures keystrokes including special keys like Enter, Tab, and Space.
+- Sends captured keystrokes to a specified server at regular intervals.
+- Configurable server IP address, port, and time interval.
 
-## Usage:
+## Installation
 
-### 1. Install Dependencies:
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/Oicus/my_project.git
+    cd my_project
+    ```
+
+2. Install the required dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+3. Ensure the server is running and configured to receive data.
+
+## Usage
+
+To run the keylogger, use the following command:
 ```sh
-pip install pynput requests
-### 2. Set Environment Variables (optional):
-sh
-export IP_ADDRESS="your_ip_address"
-export PORT_NUMBER="your_port_number"
-export TIME_INTERVAL="your_time_interval"
-### 3. Run the Script:
-sh
 python keylogger.py
+```
 
-### This README provides the necessary steps for users to set up and run your project, along with a clear explanation of the improvements.
+## Legal Disclaimer
+
+This project is intended for educational purposes only. The use of this tool for capturing keystrokes without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state, and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+
+## Development and Contributions
+
+This project is open to contributions and further development. Feel free to fork the repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT License](LICENSE)
